@@ -1,0 +1,6 @@
+[submodule "centipyde"]
+	path = centipyde
+	url = git@github.com:rbowden91/centipyde
+[submodule "repair50"]
+	path = repair50
+	url = git@github.com:rbowden91/repair50
