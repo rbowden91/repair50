@@ -7,8 +7,8 @@ update:
 	    cd $i
 	    git checkout .
 	    cd ..
-	    git checkoout .
-	    git pull && git submodule update
 	done
+	git checkoout .
+	git pull && git submodule update
 
-.ONESCRIPT:
+.ONESHELL:
