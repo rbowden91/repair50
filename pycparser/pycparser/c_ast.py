@@ -31,7 +31,7 @@ def _repr(obj):
 class Node(object):
     __slots__ = ('node_properties',)
     def __init__(self):
-        self.node_properties = {'test_data': {}}
+        self.node_properties = {}
 
     """ Abstract base class for AST nodes.
     """
