@@ -1,9 +1,12 @@
-[submodule "repair50"]
-	path = repair50
-	url = git@github.com:rbowden91/repair50
+[submodule "robo50"]
+	path = robo50
+	url = git@github.com:rbowden91/robo50
 [submodule "team_search"]
 	path = team_search
 	url = git@github.com:rbowden91/team_search
 [submodule "centipyde"]
 	path = centipyde
 	url = git@github.com:rbowden91/centipyde
+[submodule "papers/Repair50_NeurIPS19"]
+	path = papers/Repair50_NeurIPS19
+	url = git@github.com:jtristan/Repair50_NeurIPS19.git
