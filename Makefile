@@ -1,7 +1,8 @@
 SHELL := /bin/bash
+.ONESHELL:
 
 deploy:
-	for i in centipyde repair50 team_search; do
+	for i in centipyde robo50 team_search; do
 	    cd "$$i"
 	    git commit -am "update"
 	    git push origin HEAD:master
@@ -10,7 +11,7 @@ deploy:
 	git commit -am "update" && git push
 
 update:
-	for i in centipyde repair50 team_search; do
+	for i in centipyde robo50 team_search; do
 	    cd "$$i"
 	    git checkout .
 	    cd ..
@@ -18,4 +19,10 @@ update:
 	git checkout .
 	git pull && git submodule update
 
-.ONESHELL:
+setup:
+	for i in pycparser centipyde robo50; do
+		cd "$$i"
+		python setup.py develop
+		cd ..
+	done
+
